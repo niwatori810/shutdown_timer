@@ -18,6 +18,12 @@ public class TestForm : Form
         // オプション: ウィンドウの初期サイズを設定します
         this.Size = new System.Drawing.Size(300, 250); // ボタンが増えたので高さを調整
 
+        // ラベルの作成と設定
+        Label instructionLabel = new Label();
+        instructionLabel.Location = new System.Drawing.Point(50, 30); // 入力ボックスの上に位置を設定
+        instructionLabel.Size = new System.Drawing.Size(200, 20);    // サイズを設定
+        instructionLabel.Text = "シャットダウンの予約時間(秒数指定)"; // ラベルのテキストを設定
+
         // ① 入力ボックスの作成と設定
         inputTextBox = new TextBox();
         inputTextBox.Location = new System.Drawing.Point(50, 50); // 位置を設定
